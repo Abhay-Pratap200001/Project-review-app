@@ -1,9 +1,9 @@
-import React from 'react'
-import { Button } from "@/components/ui/button" 
+import Herosection from '@/components/landing-Page/hero-section'
+
 const page = () => {
   return (
     <div>
-      <Button variant="outline">Button</Button>
+     <Herosection/>
     </div>
   )
 }
