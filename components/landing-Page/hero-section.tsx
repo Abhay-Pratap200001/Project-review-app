@@ -39,7 +39,7 @@ const stateData = [
     icon: UserIcon,
     Value: "10K+",
     lable: "Active Creators",
-    hasBorder: true
+    hasBorder: true,
   },
 
   {
