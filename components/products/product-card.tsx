@@ -16,7 +16,7 @@ interface Product {
   name: string;
   description: string;
   tags: string[];
-  vote: number;
+   vote: number;
   isFeatured: boolean;
 }
 
