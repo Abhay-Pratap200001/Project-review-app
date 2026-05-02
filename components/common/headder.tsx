@@ -2,6 +2,7 @@ import {
   CompassIcon,
   Ghost,
   HomeIcon,
+  LoaderIcon,
   SparkleIcon,
   SparklesIcon,
   UserIcon,
@@ -16,6 +17,7 @@ import {
   SignUpButton,
   UserButton,
 } from "@clerk/nextjs";
+import { Suspense } from "react";
 
 const Logo = () => {
   return (
@@ -56,6 +58,7 @@ const Headder = () => {
           </nav>
 
           <div className="flex items-center gap-3">
+            <Suspense fallback={<div><LoaderIcon/></div>}>
             <Show when="signed-out">
               <SignInButton />
               <SignUpButton>
@@ -72,6 +75,7 @@ const Headder = () => {
               </Button>
               <UserButton />
             </Show>
+            </Suspense>
           </div>
         </div>
       </div>

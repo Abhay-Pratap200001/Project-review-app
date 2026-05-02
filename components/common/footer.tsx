@@ -43,7 +43,7 @@ const Footer = () => {
         <div className="flex items-center justify-between">
           
           <p className="text-xs text-muted-foreground">
-            © {new Date().getFullYear()} iBuiltThis
+            ©  iBuiltThis
           </p>
 
           {/* Socials */}
